@@ -1,0 +1,249 @@
+{
+  "" : {
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayer-primary.dia",
+    "emit-module-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayer-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayer-primary-emit-module.dia",
+    "pch" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayer-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayer-primary.swiftdeps"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Models/AudioTrack.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioTrack.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioTrack.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioTrack.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioTrack.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioTrack.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioTrack.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioTrack.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioTrack~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Models/EQPreset.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EQPreset.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EQPreset.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EQPreset.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EQPreset.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EQPreset.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EQPreset.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EQPreset.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EQPreset~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Models/PlayerTheme.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerTheme.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerTheme.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerTheme.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerTheme.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerTheme.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerTheme.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerTheme.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerTheme~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Models/Playlist.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/Playlist.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/Playlist.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/Playlist.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/Playlist.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/Playlist.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/Playlist.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/Playlist.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/Playlist~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Models/RepeatMode.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/RepeatMode.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/RepeatMode.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/RepeatMode.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/RepeatMode.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/RepeatMode.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/RepeatMode.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/RepeatMode.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/RepeatMode~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Services/AudioPlayerService.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioPlayerService.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioPlayerService.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioPlayerService.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioPlayerService.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioPlayerService.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioPlayerService.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioPlayerService.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioPlayerService~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Services/DocumentImportService.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/DocumentImportService.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/DocumentImportService.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/DocumentImportService.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/DocumentImportService.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/DocumentImportService.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/DocumentImportService.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/DocumentImportService.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/DocumentImportService~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Services/LibraryStore.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryStore.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryStore.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryStore.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryStore.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryStore.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryStore.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryStore.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryStore~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Services/ThemeManager.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeManager.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeManager.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeManager.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeManager.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeManager.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeManager.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeManager.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeManager~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Supporting/PreviewData.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PreviewData.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PreviewData.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PreviewData.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PreviewData.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PreviewData.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PreviewData.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PreviewData.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PreviewData~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/ViewModels/LibraryViewModel.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryViewModel.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryViewModel.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryViewModel.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryViewModel.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryViewModel.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryViewModel.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryViewModel.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryViewModel~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/ViewModels/PlaylistViewModel.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistViewModel.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistViewModel.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistViewModel.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistViewModel.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistViewModel.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistViewModel.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistViewModel.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistViewModel~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/ViewModels/SettingsViewModel.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsViewModel.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsViewModel.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsViewModel.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsViewModel.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsViewModel.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsViewModel.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsViewModel.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsViewModel~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/ArtworkView.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ArtworkView.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ArtworkView.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ArtworkView.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ArtworkView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ArtworkView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ArtworkView.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ArtworkView.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ArtworkView~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/CompactPlayerView.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactPlayerView.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactPlayerView.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactPlayerView.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactPlayerView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactPlayerView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactPlayerView.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactPlayerView.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactPlayerView~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/ContentView.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/EqualizerView.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EqualizerView.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EqualizerView.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EqualizerView.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EqualizerView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EqualizerView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EqualizerView.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EqualizerView.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EqualizerView~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/LibraryView.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryView.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryView.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryView.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryView.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryView.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryView~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/PlayerView.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerView.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerView.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerView.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerView.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerView.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerView~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/PlaylistEditorView.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistEditorView.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistEditorView.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistEditorView.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistEditorView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistEditorView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistEditorView.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistEditorView.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistEditorView~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/SettingsView.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/ThemeStyles.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeStyles.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeStyles.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeStyles.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeStyles.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeStyles.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeStyles.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeStyles.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeStyles~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/TrackDetailView.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/TrackDetailView.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/TrackDetailView.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/TrackDetailView.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/TrackDetailView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/TrackDetailView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/TrackDetailView.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/TrackDetailView.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/TrackDetailView~partial.swiftmodule"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/naWPlayerApp.swift" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayerApp.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayerApp.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayerApp.dia",
+    "index-unit-output-path" : "/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayerApp.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayerApp.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayerApp.o",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayerApp.swiftdeps",
+    "swiftmodule" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Debug-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayerApp~partial.swiftmodule"
+  }
+}

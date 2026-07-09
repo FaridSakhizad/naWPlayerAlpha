@@ -1,0 +1,88 @@
+{
+  "source": "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/CompactTransportControls.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Previous Track",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pause",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 69
+        }
+      },
+      {
+        "comment": "",
+        "key": "Play",
+        "location": {
+          "startingColumn": 58,
+          "startingLine": 69
+        }
+      },
+      {
+        "comment": "",
+        "key": "Next Track",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 80
+        }
+      },
+      {
+        "comment": "",
+        "key": "Shuffle",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "On",
+        "location": {
+          "startingColumn": 57,
+          "startingLine": 32
+        }
+      },
+      {
+        "comment": "",
+        "key": "Off",
+        "location": {
+          "startingColumn": 64,
+          "startingLine": 32
+        }
+      },
+      {
+        "comment": "",
+        "key": "Repeat",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "Search Library",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 89
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open Menu",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 95
+        }
+      }
+    ]
+  },
+  "version": 1
+}

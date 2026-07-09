@@ -1,0 +1,64 @@
+{
+  "source": "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/LibraryTrackRow.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Track Details",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ by %@",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "Play Track",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 60
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ by %@",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 61
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ • %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 38
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@, %@, %@",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 104
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ • %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 93
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,80 @@
+{
+  "source": "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/PlaylistEditorView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Playlist Editor",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 52
+        }
+      },
+      {
+        "comment": "",
+        "key": "Rename Playlist",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 82
+        }
+      },
+      {
+        "comment": "",
+        "key": "Playlist Actions",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 75
+        }
+      },
+      {
+        "comment": "",
+        "key": "Rename",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 64
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 70
+        }
+      },
+      {
+        "comment": "",
+        "key": "Name",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 86
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 87
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 93
+        }
+      },
+      {
+        "comment": "",
+        "key": "Choose a short name for this playlist.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 97
+        }
+      }
+    ]
+  },
+  "version": 1
+}

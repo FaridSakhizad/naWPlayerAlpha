@@ -1,0 +1,80 @@
+{
+  "source": "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/PlaylistEditorSections.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Playlists",
+        "location": {
+          "startingColumn": 17,
+          "startingLine": 10
+        }
+      },
+      {
+        "comment": "",
+        "key": "Active",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 24
+        }
+      },
+      {
+        "comment": "",
+        "key": "New playlist",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 12
+        }
+      },
+      {
+        "comment": "",
+        "key": "Create Playlist",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "Current Queue",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "Playlist Editor",
+        "location": {
+          "startingColumn": 17,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "Play %@",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 60
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Tracks",
+        "location": {
+          "startingColumn": 17,
+          "startingLine": 75
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add %@",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 82
+        }
+      }
+    ]
+  },
+  "version": 1
+}

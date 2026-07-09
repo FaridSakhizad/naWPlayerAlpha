@@ -1,0 +1,226 @@
+{
+  "" : {
+    "const-values" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayer-primary.swiftconstvalues",
+    "dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayer-primary.d",
+    "diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayer-primary.dia",
+    "emit-module-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayer-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayer-primary-emit-module.dia",
+    "pch" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayer-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayer-primary.swiftdeps"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Models/AudioFileFormat.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioFileFormat.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioFileFormat.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioFileFormat.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Models/AudioTrack.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioTrack.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioTrack.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioTrack.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Models/EQPreset.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EQPreset.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EQPreset.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EQPreset.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Models/PlayerTheme.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerTheme.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerTheme.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerTheme.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Models/Playlist.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/Playlist.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/Playlist.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/Playlist.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Models/RepeatMode.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/RepeatMode.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/RepeatMode.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/RepeatMode.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Services/AudioCodec.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioCodec.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioCodec.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioCodec.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Services/AudioEngineService.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioEngineService.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioEngineService.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioEngineService.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Services/AudioPlayerService.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioPlayerService.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioPlayerService.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioPlayerService.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Services/AudioSessionService.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioSessionService.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioSessionService.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/AudioSessionService.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Services/DocumentImportService.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/DocumentImportService.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/DocumentImportService.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/DocumentImportService.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Services/LibraryStore.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryStore.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryStore.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryStore.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Services/NowPlayingService.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/NowPlayingService.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/NowPlayingService.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/NowPlayingService.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Services/PlaybackErrors.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaybackErrors.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaybackErrors.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaybackErrors.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Services/PlaybackProgressTracker.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaybackProgressTracker.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaybackProgressTracker.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaybackProgressTracker.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Services/PlaybackQueue.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaybackQueue.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaybackQueue.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaybackQueue.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Services/PlayerSettingsStore.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerSettingsStore.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerSettingsStore.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerSettingsStore.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Services/RemoteCommandService.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/RemoteCommandService.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/RemoteCommandService.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/RemoteCommandService.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Services/ThemeManager.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeManager.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeManager.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeManager.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Services/TrackPlaybackScheduler.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/TrackPlaybackScheduler.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/TrackPlaybackScheduler.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/TrackPlaybackScheduler.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Supporting/PreviewData.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PreviewData.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PreviewData.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PreviewData.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/ViewModels/LibraryViewModel.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryViewModel.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryViewModel.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryViewModel.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/ViewModels/PlaylistViewModel.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistViewModel.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistViewModel.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistViewModel.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/ViewModels/SettingsViewModel.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsViewModel.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsViewModel.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsViewModel.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/ArtworkView.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ArtworkView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ArtworkView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ArtworkView.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/CompactPlayerToolbar.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactPlayerToolbar.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactPlayerToolbar.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactPlayerToolbar.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/CompactPlayerView.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactPlayerView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactPlayerView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactPlayerView.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/CompactSeekBarView.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactSeekBarView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactSeekBarView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactSeekBarView.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/CompactTrackTitleView.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactTrackTitleView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactTrackTitleView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactTrackTitleView.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/CompactTransportControls.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactTransportControls.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactTransportControls.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/CompactTransportControls.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/ContentView.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/EqualizerView.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EqualizerView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EqualizerView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/EqualizerView.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/LibraryModals.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryModals.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryModals.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryModals.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/LibraryTrackRow.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryTrackRow.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryTrackRow.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryTrackRow.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/LibraryView.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/LibraryView.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/PlayerQueueSection.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerQueueSection.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerQueueSection.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerQueueSection.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/PlayerView.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlayerView.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/PlaylistEditorView.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistEditorView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistEditorView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/PlaylistEditorView.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/SettingsView.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/SettingsView.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/ThemeStyles.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeStyles.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeStyles.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/ThemeStyles.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/TrackDetailView.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/TrackDetailView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/TrackDetailView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/TrackDetailView.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/Views/VolumeSliderView.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/VolumeSliderView.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/VolumeSliderView.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/VolumeSliderView.o"
+  },
+  "/Users/fara/Work/naWPlayer/app/naWPlayer/naWPlayerApp.swift" : {
+    "index-unit-output-path" : "/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayerApp.o",
+    "llvm-bc" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayerApp.bc",
+    "object" : "/Users/fara/Work/naWPlayer/app/DerivedData/Build/Intermediates.noindex/naWPlayer.build/Release-iphonesimulator/naWPlayer.build/Objects-normal/arm64/naWPlayerApp.o"
+  }
+}
