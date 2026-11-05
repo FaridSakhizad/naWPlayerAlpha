@@ -27,11 +27,9 @@
 		0A1000120000000000000012 /* CompactPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2000120000000000000012 /* CompactPlayerView.swift */; };
 		0A1000130000000000000013 /* TrackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2000130000000000000013 /* TrackDetailView.swift */; };
 		0A1000140000000000000014 /* PlaylistEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2000140000000000000014 /* PlaylistEditorView.swift */; };
-		0A10002C000000000000002C /* PlaylistEditorSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A20002F000000000000002F /* PlaylistEditorSections.swift */; };
 		0A1000150000000000000015 /* EqualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2000150000000000000015 /* EqualizerView.swift */; };
 		0A1000160000000000000016 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2000160000000000000016 /* SettingsView.swift */; };
 		0A1000170000000000000017 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2000170000000000000017 /* PreviewData.swift */; };
-		0A1000180000000000000018 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A20001B000000000000001B /* PlayerView.swift */; };
 		0A1000190000000000000019 /* VolumeSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A20001C000000000000001C /* VolumeSliderView.swift */; };
 		0A1000220000000000000022 /* LibraryTrackRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2000250000000000000025 /* LibraryTrackRow.swift */; };
 		0A1000230000000000000023 /* LibraryModals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2000260000000000000026 /* LibraryModals.swift */; };
@@ -39,10 +37,9 @@
 		0A1000250000000000000025 /* CompactTrackTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2000280000000000000028 /* CompactTrackTitleView.swift */; };
 		0A1000260000000000000026 /* CompactSeekBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2000290000000000000029 /* CompactSeekBarView.swift */; };
 		0A1000270000000000000027 /* CompactTransportControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A20002A000000000000002A /* CompactTransportControls.swift */; };
-		0A1000290000000000000029 /* PlayerQueueSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A20002C000000000000002C /* PlayerQueueSection.swift */; };
-		0A10002D000000000000002D /* PlayerNowPlayingSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2000300000000000000030 /* PlayerNowPlayingSection.swift */; };
-		0A10002E000000000000002E /* PlayerSeekSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2000310000000000000031 /* PlayerSeekSection.swift */; };
-		0A10002F000000000000002F /* PlayerTransportControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2000320000000000000032 /* PlayerTransportControls.swift */; };
+		0A1000310000000000000031 /* DocumentPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2000340000000000000034 /* DocumentPickerView.swift */; };
+		0A1000320000000000000032 /* SeekHoldButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2000350000000000000035 /* SeekHoldButton.swift */; };
+		0A1000330000000000000033 /* BatchTrackReorderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2000360000000000000036 /* BatchTrackReorderList.swift */; };
 		0A10001A000000000000001A /* AudioFileFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A20001D000000000000001D /* AudioFileFormat.swift */; };
 		0A10001B000000000000001B /* AudioCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A20001E000000000000001E /* AudioCodec.swift */; };
 		0A10001C000000000000001C /* NowPlayingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A20001F000000000000001F /* NowPlayingService.swift */; };
@@ -54,6 +51,7 @@
 		0A1000280000000000000028 /* PlaybackErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A20002B000000000000002B /* PlaybackErrors.swift */; };
 		0A10002A000000000000002A /* PlaybackProgressTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A20002D000000000000002D /* PlaybackProgressTracker.swift */; };
 		0A10002B000000000000002B /* TrackPlaybackScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A20002E000000000000002E /* TrackPlaybackScheduler.swift */; };
+		0A1000300000000000000030 /* TrackFileResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2000330000000000000033 /* TrackFileResolver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,14 +75,12 @@
 		0A2000120000000000000012 /* CompactPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactPlayerView.swift; sourceTree = "<group>"; };
 		0A2000130000000000000013 /* TrackDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailView.swift; sourceTree = "<group>"; };
 		0A2000140000000000000014 /* PlaylistEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistEditorView.swift; sourceTree = "<group>"; };
-		0A20002F000000000000002F /* PlaylistEditorSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistEditorSections.swift; sourceTree = "<group>"; };
 		0A2000150000000000000015 /* EqualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualizerView.swift; sourceTree = "<group>"; };
 		0A2000160000000000000016 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0A2000170000000000000017 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		0A2000180000000000000018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A2000190000000000000019 /* naWPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = naWPlayer.entitlements; sourceTree = "<group>"; };
 		0A20001A000000000000001A /* naWPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = naWPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A20001B000000000000001B /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		0A20001C000000000000001C /* VolumeSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSliderView.swift; sourceTree = "<group>"; };
 		0A2000250000000000000025 /* LibraryTrackRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTrackRow.swift; sourceTree = "<group>"; };
 		0A2000260000000000000026 /* LibraryModals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryModals.swift; sourceTree = "<group>"; };
@@ -92,10 +88,9 @@
 		0A2000280000000000000028 /* CompactTrackTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactTrackTitleView.swift; sourceTree = "<group>"; };
 		0A2000290000000000000029 /* CompactSeekBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactSeekBarView.swift; sourceTree = "<group>"; };
 		0A20002A000000000000002A /* CompactTransportControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactTransportControls.swift; sourceTree = "<group>"; };
-		0A20002C000000000000002C /* PlayerQueueSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerQueueSection.swift; sourceTree = "<group>"; };
-		0A2000300000000000000030 /* PlayerNowPlayingSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNowPlayingSection.swift; sourceTree = "<group>"; };
-		0A2000310000000000000031 /* PlayerSeekSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSeekSection.swift; sourceTree = "<group>"; };
-		0A2000320000000000000032 /* PlayerTransportControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTransportControls.swift; sourceTree = "<group>"; };
+		0A2000340000000000000034 /* DocumentPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPickerView.swift; sourceTree = "<group>"; };
+		0A2000350000000000000035 /* SeekHoldButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeekHoldButton.swift; sourceTree = "<group>"; };
+		0A2000360000000000000036 /* BatchTrackReorderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchTrackReorderList.swift; sourceTree = "<group>"; };
 		0A20001D000000000000001D /* AudioFileFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFileFormat.swift; sourceTree = "<group>"; };
 		0A20001E000000000000001E /* AudioCodec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCodec.swift; sourceTree = "<group>"; };
 		0A20001F000000000000001F /* NowPlayingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingService.swift; sourceTree = "<group>"; };
@@ -107,6 +102,7 @@
 		0A20002B000000000000002B /* PlaybackErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackErrors.swift; sourceTree = "<group>"; };
 		0A20002D000000000000002D /* PlaybackProgressTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackProgressTracker.swift; sourceTree = "<group>"; };
 		0A20002E000000000000002E /* TrackPlaybackScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackPlaybackScheduler.swift; sourceTree = "<group>"; };
+		0A2000330000000000000033 /* TrackFileResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackFileResolver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +169,7 @@
 				0A20002B000000000000002B /* PlaybackErrors.swift */,
 				0A20002D000000000000002D /* PlaybackProgressTracker.swift */,
 				0A20002E000000000000002E /* TrackPlaybackScheduler.swift */,
+				0A2000330000000000000033 /* TrackFileResolver.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -193,6 +190,7 @@
 				0A20000E000000000000000E /* ThemeStyles.swift */,
 				0A20000F000000000000000F /* ArtworkView.swift */,
 				0A2000100000000000000010 /* ContentView.swift */,
+				0A2000340000000000000034 /* DocumentPickerView.swift */,
 				0A2000110000000000000011 /* LibraryView.swift */,
 				0A2000250000000000000025 /* LibraryTrackRow.swift */,
 				0A2000260000000000000026 /* LibraryModals.swift */,
@@ -201,15 +199,11 @@
 				0A2000280000000000000028 /* CompactTrackTitleView.swift */,
 				0A2000290000000000000029 /* CompactSeekBarView.swift */,
 				0A20002A000000000000002A /* CompactTransportControls.swift */,
-				0A20001B000000000000001B /* PlayerView.swift */,
-				0A20002C000000000000002C /* PlayerQueueSection.swift */,
-				0A2000300000000000000030 /* PlayerNowPlayingSection.swift */,
-				0A2000310000000000000031 /* PlayerSeekSection.swift */,
-				0A2000320000000000000032 /* PlayerTransportControls.swift */,
 				0A20001C000000000000001C /* VolumeSliderView.swift */,
+				0A2000350000000000000035 /* SeekHoldButton.swift */,
+				0A2000360000000000000036 /* BatchTrackReorderList.swift */,
 				0A2000130000000000000013 /* TrackDetailView.swift */,
 				0A2000140000000000000014 /* PlaylistEditorView.swift */,
-				0A20002F000000000000002F /* PlaylistEditorSections.swift */,
 				0A2000150000000000000015 /* EqualizerView.swift */,
 				0A2000160000000000000016 /* SettingsView.swift */,
 			);
@@ -322,12 +316,14 @@
 				0A1000280000000000000028 /* PlaybackErrors.swift in Sources */,
 				0A10002A000000000000002A /* PlaybackProgressTracker.swift in Sources */,
 				0A10002B000000000000002B /* TrackPlaybackScheduler.swift in Sources */,
+				0A1000300000000000000030 /* TrackFileResolver.swift in Sources */,
 				0A10000B000000000000000B /* LibraryViewModel.swift in Sources */,
 				0A10000C000000000000000C /* PlaylistViewModel.swift in Sources */,
 				0A10000D000000000000000D /* SettingsViewModel.swift in Sources */,
 				0A10000E000000000000000E /* ThemeStyles.swift in Sources */,
 				0A10000F000000000000000F /* ArtworkView.swift in Sources */,
 				0A1000100000000000000010 /* ContentView.swift in Sources */,
+				0A1000310000000000000031 /* DocumentPickerView.swift in Sources */,
 				0A1000110000000000000011 /* LibraryView.swift in Sources */,
 				0A1000220000000000000022 /* LibraryTrackRow.swift in Sources */,
 				0A1000230000000000000023 /* LibraryModals.swift in Sources */,
@@ -336,15 +332,11 @@
 				0A1000250000000000000025 /* CompactTrackTitleView.swift in Sources */,
 				0A1000260000000000000026 /* CompactSeekBarView.swift in Sources */,
 				0A1000270000000000000027 /* CompactTransportControls.swift in Sources */,
-				0A1000180000000000000018 /* PlayerView.swift in Sources */,
-				0A1000290000000000000029 /* PlayerQueueSection.swift in Sources */,
-				0A10002D000000000000002D /* PlayerNowPlayingSection.swift in Sources */,
-				0A10002E000000000000002E /* PlayerSeekSection.swift in Sources */,
-				0A10002F000000000000002F /* PlayerTransportControls.swift in Sources */,
 				0A1000190000000000000019 /* VolumeSliderView.swift in Sources */,
+				0A1000320000000000000032 /* SeekHoldButton.swift in Sources */,
+				0A1000330000000000000033 /* BatchTrackReorderList.swift in Sources */,
 				0A1000130000000000000013 /* TrackDetailView.swift in Sources */,
 				0A1000140000000000000014 /* PlaylistEditorView.swift in Sources */,
-				0A10002C000000000000002C /* PlaylistEditorSections.swift in Sources */,
 				0A1000150000000000000015 /* EqualizerView.swift in Sources */,
 				0A1000160000000000000016 /* SettingsView.swift in Sources */,
 				0A1000170000000000000017 /* PreviewData.swift in Sources */,

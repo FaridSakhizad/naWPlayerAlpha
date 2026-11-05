@@ -19,12 +19,12 @@ struct CompactSeekBarView: View {
                 .foregroundStyle(theme.palette.mutedText)
                 .frame(width: 34, alignment: .leading)
 
-            Slider(
+            PlayerTappableSlider(
                 value: Binding(
                     get: { player.elapsed },
-                    set: { player.seek(to: $0) }
+                    set: { player.seek(to: min(max($0, 0), duration)) }
                 ),
-                in: 0...max(duration, 1)
+                range: 0...max(duration, 1)
             )
 
             Text("-\(formatTime(remaining))")

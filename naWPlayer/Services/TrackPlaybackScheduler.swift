@@ -3,6 +3,7 @@ import Foundation
 @MainActor
 final class TrackPlaybackScheduler {
     private let audioEngineService: AudioEngineService
+    private var activeAccess: TrackFileAccess?
 
     init(audioEngineService: AudioEngineService) {
         self.audioEngineService = audioEngineService
@@ -15,12 +16,12 @@ final class TrackPlaybackScheduler {
         startsPlayback: Bool,
         completion: @escaping () -> Void
     ) throws {
-        let url = store.fileURL(for: track)
-        guard FileManager.default.fileExists(atPath: url.path) else {
-            throw PlaybackError.missingFile
-        }
+        activeAccess?.stop()
+        activeAccess = nil
 
-        let playable = try AudioCodecRegistry.shared.openPlayableFile(at: url)
+        let access = try TrackFileResolver(store: store).accessFile(for: track)
+        let playable = try AudioCodecRegistry.shared.openPlayableFile(at: access.url)
+        activeAccess = access
         try audioEngineService.schedule(
             file: playable.file,
             format: playable.format,
@@ -28,5 +29,10 @@ final class TrackPlaybackScheduler {
             startsPlayback: startsPlayback,
             completion: completion
         )
+    }
+
+    func stopAccessingCurrentFile() {
+        activeAccess?.stop()
+        activeAccess = nil
     }
 }

@@ -3,6 +3,22 @@ import Foundation
 import UniformTypeIdentifiers
 
 struct DocumentImportService {
+    enum ImportMode: String, CaseIterable, Identifiable {
+        case copyIntoApp
+        case linkInPlace
+
+        var id: String { rawValue }
+
+        var title: String {
+            switch self {
+            case .copyIntoApp:
+                "Copy Into App"
+            case .linkInPlace:
+                "Link Files in Place"
+            }
+        }
+    }
+
     enum ImportError: LocalizedError {
         case unsupportedFile
         case noImportableFiles([SkippedImport])
@@ -42,14 +58,14 @@ struct DocumentImportService {
         let reason: String
     }
 
-    func importFiles(from urls: [URL], into store: LibraryStore) async -> Result<ImportResult, Error> {
+    func importFiles(from urls: [URL], into store: LibraryStore, mode: ImportMode) async -> Result<ImportResult, Error> {
         do {
             try await MainActor.run { try store.ensureDirectories() }
             var imported: [AudioTrack] = []
             var skipped: [SkippedImport] = []
             for url in urls {
                 do {
-                    let track = try await importOne(url: url, into: store)
+                    let track = try await importOne(url: url, into: store, mode: mode)
                     imported.append(track)
                 } catch {
                     skipped.append(SkippedImport(
@@ -69,7 +85,7 @@ struct DocumentImportService {
         }
     }
 
-    private func importOne(url: URL, into store: LibraryStore) async throws -> AudioTrack {
+    private func importOne(url: URL, into store: LibraryStore, mode: ImportMode) async throws -> AudioTrack {
         let canAccess = url.startAccessingSecurityScopedResource()
         defer {
             if canAccess {
@@ -81,6 +97,15 @@ struct DocumentImportService {
             throw ImportError.unsupportedFile
         }
 
+        switch mode {
+        case .copyIntoApp:
+            return try await copyIntoApp(url: url, store: store)
+        case .linkInPlace:
+            return try await linkInPlace(url: url, store: store)
+        }
+    }
+
+    private func copyIntoApp(url: URL, store: LibraryStore) async throws -> AudioTrack {
         let fileID = UUID()
         let ext = url.pathExtension.isEmpty ? "m4a" : url.pathExtension
         let destinationName = "\(fileID.uuidString).\(ext)"
@@ -107,7 +132,34 @@ struct DocumentImportService {
             artist: metadata.artist,
             album: metadata.album,
             duration: metadata.duration,
-            fileName: destinationName,
+            storageLocation: .sandbox(fileName: destinationName),
+            artworkFileName: artworkFileName
+        )
+    }
+
+    private func linkInPlace(url: URL, store: LibraryStore) async throws -> AudioTrack {
+        do {
+            try AudioCodecRegistry.shared.validateFile(at: url)
+        } catch {
+            throw ImportError.unsupportedFile
+        }
+
+        let fileID = UUID()
+        let bookmarkData = try url.bookmarkData(
+            options: [],
+            includingResourceValuesForKeys: nil,
+            relativeTo: nil
+        )
+        let metadata = await readMetadata(from: url)
+        let artworkFileName = try await saveArtwork(metadata.artworkData, id: fileID, store: store)
+
+        return AudioTrack(
+            id: fileID,
+            title: metadata.title.isEmpty ? url.deletingPathExtension().lastPathComponent : metadata.title,
+            artist: metadata.artist,
+            album: metadata.album,
+            duration: metadata.duration,
+            storageLocation: .externalBookmark(bookmarkData: bookmarkData, displayName: url.lastPathComponent),
             artworkFileName: artworkFileName
         )
     }

@@ -56,10 +56,6 @@ final class LibraryStore: ObservableObject {
         documentsURL.appendingPathComponent("playlists.json")
     }
 
-    func fileURL(for track: AudioTrack) -> URL {
-        tracksDirectory.appendingPathComponent(track.fileName)
-    }
-
     func artworkURL(for track: AudioTrack) -> URL? {
         guard let artworkFileName = track.artworkFileName else { return nil }
         return artworkDirectory.appendingPathComponent(artworkFileName)
@@ -67,6 +63,12 @@ final class LibraryStore: ObservableObject {
 
     func addTracks(_ newTracks: [AudioTrack]) {
         tracks.append(contentsOf: newTracks)
+        save()
+    }
+
+    func updateTrack(_ updatedTrack: AudioTrack) {
+        guard let index = tracks.firstIndex(where: { $0.id == updatedTrack.id }) else { return }
+        tracks[index] = updatedTrack
         save()
     }
 
@@ -90,11 +92,14 @@ final class LibraryStore: ObservableObject {
         save()
     }
 
-    func createPlaylist(named name: String) {
+    @discardableResult
+    func createPlaylist(named name: String, trackIDs: [UUID] = []) -> Playlist? {
         let trimmed = name.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !trimmed.isEmpty else { return }
-        playlists.append(Playlist(name: trimmed))
+        guard !trimmed.isEmpty else { return nil }
+        let playlist = Playlist(name: trimmed, trackIDs: trackIDs)
+        playlists.append(playlist)
         save()
+        return playlist
     }
 
     func renamePlaylist(_ playlist: Playlist, to name: String) {
@@ -108,9 +113,25 @@ final class LibraryStore: ObservableObject {
         save()
     }
 
+    func deletePlaylists(at offsets: IndexSet) {
+        playlists.remove(atOffsets: offsets)
+        save()
+    }
+
+    func movePlaylists(from source: IndexSet, to destination: Int) {
+        playlists.move(fromOffsets: source, toOffset: destination)
+        save()
+    }
+
     func setTrackIDs(_ trackIDs: [UUID], for playlist: Playlist) {
         guard let index = playlists.firstIndex(where: { $0.id == playlist.id }) else { return }
         playlists[index].trackIDs = trackIDs
+        save()
+    }
+
+    func addTrackIDs(_ trackIDs: [UUID], toPlaylistID playlistID: UUID) {
+        guard let index = playlists.firstIndex(where: { $0.id == playlistID }) else { return }
+        playlists[index].trackIDs.append(contentsOf: trackIDs)
         save()
     }
 
@@ -212,7 +233,9 @@ final class LibraryStore: ObservableObject {
 
     private func removeFiles(for tracks: [AudioTrack]) {
         for track in tracks {
-            try? fileManager.removeItem(at: fileURL(for: track))
+            if case .sandbox(let fileName) = track.storageLocation {
+                try? fileManager.removeItem(at: tracksDirectory.appendingPathComponent(fileName))
+            }
             if let artworkURL = artworkURL(for: track) {
                 try? fileManager.removeItem(at: artworkURL)
             }

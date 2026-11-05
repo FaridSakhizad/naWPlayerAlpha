@@ -12,6 +12,7 @@ struct PlayerSettingsStore {
         static let eqPreset = "eqPreset"
         static let eqGains = "eqGains"
         static let playerVolume = "playerVolume"
+        static let defaultImportMode = "defaultImportMode"
     }
 
     private let userDefaults: UserDefaults
@@ -53,5 +54,15 @@ struct PlayerSettingsStore {
 
     func saveVolume(_ volume: Float) {
         userDefaults.set(min(max(volume, 0), 1), forKey: Key.playerVolume)
+    }
+
+    func loadDefaultImportMode() -> DocumentImportService.ImportMode {
+        userDefaults
+            .string(forKey: Key.defaultImportMode)
+            .flatMap(DocumentImportService.ImportMode.init(rawValue:)) ?? .copyIntoApp
+    }
+
+    func saveDefaultImportMode(_ mode: DocumentImportService.ImportMode) {
+        userDefaults.set(mode.rawValue, forKey: Key.defaultImportMode)
     }
 }

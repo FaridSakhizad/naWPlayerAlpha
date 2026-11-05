@@ -34,6 +34,7 @@ enum PlaybackFailureReason: Equatable {
 
 enum PlaybackError: LocalizedError {
     case missingFile
+    case linkedFileUnavailable
     case emptyFile
     case unsupportedFormat
 
@@ -41,6 +42,8 @@ enum PlaybackError: LocalizedError {
         switch self {
         case .missingFile:
             "The audio file is missing from the app sandbox."
+        case .linkedFileUnavailable:
+            "The linked audio file is unavailable."
         case .emptyFile:
             "The audio file has no playable samples."
         case .unsupportedFormat:
@@ -53,7 +56,7 @@ struct PlaybackFailureMapper {
     static func reason(for error: Error) -> PlaybackFailureReason {
         if let playbackError = error as? PlaybackError {
             switch playbackError {
-            case .missingFile:
+            case .missingFile, .linkedFileUnavailable:
                 return .missingFile
             case .emptyFile:
                 return .emptyFile
@@ -76,5 +79,17 @@ struct PlaybackFailureMapper {
             }
         }
         return .unsupportedOrDamagedFile
+    }
+
+    static func shouldSilentlySkip(_ error: Error) -> Bool {
+        guard let playbackError = error as? PlaybackError else {
+            return false
+        }
+        switch playbackError {
+        case .missingFile, .linkedFileUnavailable:
+            return true
+        case .emptyFile, .unsupportedFormat:
+            return false
+        }
     }
 }

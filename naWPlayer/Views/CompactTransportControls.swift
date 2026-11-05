@@ -47,14 +47,14 @@ struct CompactTransportControls: View {
     }
 
     private var previousButton: some View {
-        Button {
+        SeekHoldButton(direction: .backward) {
             player.previous()
         } label: {
             Image(systemName: "backward.fill")
                 .frame(width: transportControlSize.width, height: transportControlSize.height)
         }
-        .buttonStyle(.borderless)
         .accessibilityLabel("Previous Track")
+        .accessibilityHint("Hold to rewind")
     }
 
     private var playPauseButton: some View {
@@ -70,14 +70,14 @@ struct CompactTransportControls: View {
     }
 
     private var nextButton: some View {
-        Button {
+        SeekHoldButton(direction: .forward) {
             player.next()
         } label: {
             Image(systemName: "forward.fill")
                 .frame(width: transportControlSize.width, height: transportControlSize.height)
         }
-        .buttonStyle(.borderless)
         .accessibilityLabel("Next Track")
+        .accessibilityHint("Hold to fast forward")
     }
 
     private var navigationControls: some View {

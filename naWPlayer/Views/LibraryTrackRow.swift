@@ -3,31 +3,31 @@ import SwiftUI
 struct LibraryTrackRow: View {
     let track: AudioTrack
     let isCurrent: Bool
+    let isPlaying: Bool
     let isSelected: Bool
+    var isEditing = false
+    var isMarkedForDeletion = false
     let onDetails: () -> Void
     let onPlay: () -> Void
-    @EnvironmentObject private var store: LibraryStore
+    let onDelete: () -> Void
+    var onToggleMarkedForDeletion: (() -> Void)?
     @Environment(\.playerTheme) private var theme
-    private let artworkSize: CGFloat = 44
     private let rowMinHeight: CGFloat = 50
-    private let detailsButtonSize = CGSize(width: 28, height: 44)
     private let playButtonSize = CGSize(width: 34, height: 44)
     private let durationWidth: CGFloat = 38
 
     var body: some View {
         HStack(spacing: 10) {
-            Button(action: onDetails) {
-                Image(systemName: "info.circle")
-                    .font(.system(size: 16, weight: .semibold))
-                    .foregroundStyle(iconColor)
-                    .frame(width: detailsButtonSize.width, height: detailsButtonSize.height)
-                    .contentShape(Rectangle())
+            if isEditing, let onToggleMarkedForDeletion {
+                Button(action: onToggleMarkedForDeletion) {
+                    Image(systemName: isMarkedForDeletion ? "checkmark.circle.fill" : "circle")
+                        .font(.title3)
+                        .foregroundStyle(isMarkedForDeletion ? theme.palette.accent : theme.palette.mutedText)
+                        .frame(width: 28, height: 44)
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel(isMarkedForDeletion ? "Unmark Track" : "Mark Track")
             }
-            .buttonStyle(.plain)
-            .accessibilityLabel("Track Details")
-            .accessibilityHint("\(track.title) by \(track.artist)")
-
-            ArtworkView(track: track, store: store, size: artworkSize)
 
             VStack(alignment: .leading, spacing: 3) {
                 Text(track.title)
@@ -49,18 +49,51 @@ struct LibraryTrackRow: View {
                 .foregroundStyle(isCurrent ? Color.white : theme.palette.mutedText)
                 .frame(width: durationWidth, alignment: .trailing)
 
-            Button(action: onPlay) {
-                Image(systemName: "play.circle.fill")
-                    .font(.system(size: 25, weight: .semibold))
-                    .foregroundStyle(iconColor)
-                    .frame(width: playButtonSize.width, height: playButtonSize.height)
-                    .contentShape(Rectangle())
+            if isEditing {
+                Image(systemName: "line.3.horizontal")
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(isCurrent ? Color.white.opacity(0.72) : theme.palette.mutedText)
+                    .frame(width: 24, height: 44)
+                    .accessibilityHidden(true)
             }
-            .buttonStyle(.plain)
-            .accessibilityLabel("Play Track")
-            .accessibilityHint("\(track.title) by \(track.artist)")
+
+            if !isEditing {
+                Button(action: onPlay) {
+                    Image(systemName: isCurrent && isPlaying ? "pause.circle.fill" : "play.circle.fill")
+                        .font(.system(size: 25, weight: .semibold))
+                        .foregroundStyle(iconColor)
+                        .frame(width: playButtonSize.width, height: playButtonSize.height)
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel(isCurrent && isPlaying ? "Pause Track" : "Play Track")
+                .accessibilityHint("\(track.title) by \(track.artist)")
+            }
         }
         .frame(minHeight: rowMinHeight)
+        .swipeActions(edge: .leading, allowsFullSwipe: true) {
+            if !isEditing {
+                Button(action: onPlay) {
+                    Label(
+                        isCurrent && isPlaying ? "Pause" : "Play",
+                        systemImage: isCurrent && isPlaying ? "pause.fill" : "play.fill"
+                    )
+                }
+                .tint(theme.palette.accent)
+            }
+        }
+        .swipeActions(edge: .trailing, allowsFullSwipe: false) {
+            if !isEditing {
+                Button(action: onDetails) {
+                    Label("Details", systemImage: "info.circle")
+                }
+                .tint(theme.palette.accent)
+
+                Button(role: .destructive, action: onDelete) {
+                    Label("Delete", systemImage: "trash")
+                }
+            }
+        }
     }
 
     private var primaryTextColor: Color {

@@ -4,8 +4,10 @@ struct LibraryView: View {
     @StateObject private var viewModel: LibraryViewModel
     @Binding var scrollTargetID: AudioTrack.ID?
     @Binding var isImportingPresented: Bool
+    @Binding var importMode: DocumentImportService.ImportMode
     @Binding var isSortPresented: Bool
     @Binding var libraryEditMode: EditMode
+    @Binding var markedTrackIDs: Set<AudioTrack.ID>
     @EnvironmentObject private var store: LibraryStore
     @EnvironmentObject private var player: AudioPlayerService
     @Environment(\.playerTheme) private var theme
@@ -16,14 +18,18 @@ struct LibraryView: View {
         store: LibraryStore,
         scrollTargetID: Binding<AudioTrack.ID?>,
         isImportingPresented: Binding<Bool>,
+        importMode: Binding<DocumentImportService.ImportMode>,
         isSortPresented: Binding<Bool>,
-        libraryEditMode: Binding<EditMode>
+        libraryEditMode: Binding<EditMode>,
+        markedTrackIDs: Binding<Set<AudioTrack.ID>>
     ) {
         _viewModel = StateObject(wrappedValue: LibraryViewModel(store: store))
         _scrollTargetID = scrollTargetID
         _isImportingPresented = isImportingPresented
+        _importMode = importMode
         _isSortPresented = isSortPresented
         _libraryEditMode = libraryEditMode
+        _markedTrackIDs = markedTrackIDs
     }
 
     private var displayedTracks: [AudioTrack] {
@@ -31,6 +37,54 @@ struct LibraryView: View {
     }
 
     var body: some View {
+        Group {
+            if libraryEditMode.isEditing, !displayedTracks.isEmpty {
+                BatchTrackReorderList(
+                    tracks: displayedTracks,
+                    markedTrackIDs: markedTrackIDs,
+                    currentTrackID: player.currentTrack?.id,
+                    isPlaying: player.isPlaying,
+                    theme: theme,
+                    onToggleMarkedTrack: toggleMarkedTrack,
+                    onMoveTracks: moveMarkedTracks
+                )
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            } else {
+                regularLibraryList
+            }
+        }
+        .navigationTitle("")
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationDestination(isPresented: Binding(
+            get: { detailTrack != nil },
+            set: { if !$0 { detailTrack = nil } }
+        )) {
+            if let detailTrack {
+                TrackDetailView(track: detailTrack)
+            }
+        }
+        .onChange(of: libraryEditMode) { editMode in
+            if !editMode.isEditing {
+                markedTrackIDs.removeAll()
+            }
+        }
+        .environment(\.editMode, $libraryEditMode)
+        .sheet(isPresented: $isSortPresented) {
+            NavigationStack {
+                SortOptionsView(selectedSort: $viewModel.sort)
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button("Done") {
+                                isSortPresented = false
+                            }
+                        }
+                    }
+            }
+            .presentationDetents([.medium])
+        }
+    }
+
+    private var regularLibraryList: some View {
         ScrollViewReader { proxy in
             List {
                 Section {
@@ -42,6 +96,7 @@ struct LibraryView: View {
                                 message: "Import audio files from Files to build your local library."
                             )
                             Button {
+                                importMode = PlayerSettingsStore().loadDefaultImportMode()
                                 isImportingPresented = true
                             } label: {
                                 Label("Import Music", systemImage: "square.and.arrow.down")
@@ -57,6 +112,7 @@ struct LibraryView: View {
                             LibraryTrackRow(
                                 track: track,
                                 isCurrent: track == player.currentTrack,
+                                isPlaying: player.isPlaying,
                                 isSelected: selectedTrackID == track.id,
                                 onDetails: {
                                     selectedTrackID = track.id
@@ -64,19 +120,17 @@ struct LibraryView: View {
                                 },
                                 onPlay: {
                                     selectedTrackID = track.id
-                                    player.play(track: track, in: displayedTracks)
+                                    if track == player.currentTrack {
+                                        player.togglePlayPause()
+                                    } else {
+                                        player.play(track: track, in: displayedTracks)
+                                    }
+                                },
+                                onDelete: {
+                                    deleteTrack(track)
                                 }
                             )
                             .id(track.id)
-                            .swipeActions {
-                                Button {
-                                    selectedTrackID = track.id
-                                    player.play(track: track, in: displayedTracks)
-                                } label: {
-                                    Label("Play", systemImage: "play.fill")
-                                }
-                                .tint(theme.palette.accent)
-                            }
                             .simultaneousGesture(TapGesture(count: 2).onEnded {
                                 selectedTrackID = track.id
                                 player.play(track: track, in: displayedTracks)
@@ -88,75 +142,57 @@ struct LibraryView: View {
                             .listRowInsets(EdgeInsets(top: 6, leading: 14, bottom: 6, trailing: 14))
                         }
                         .onMove(perform: moveTracks)
-                        .onDelete { offsets in
-                            let deletedIDs = Set(offsets.compactMap { displayedTracks.indices.contains($0) ? displayedTracks[$0].id : nil })
-                            store.deleteTracks(at: offsets, from: displayedTracks)
-                            player.removeTracks(withIDs: deletedIDs)
-                        }
                     }
-                }
-            }
-            .navigationTitle("")
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationDestination(isPresented: Binding(
-                get: { detailTrack != nil },
-                set: { if !$0 { detailTrack = nil } }
-            )) {
-                if let detailTrack {
-                    TrackDetailView(track: detailTrack)
                 }
             }
             .onChange(of: scrollTargetID) { targetID in
                 guard let targetID else { return }
+                selectedTrackID = targetID
                 withAnimation {
                     proxy.scrollTo(targetID, anchor: .center)
                 }
                 scrollTargetID = nil
-            }
-            .environment(\.editMode, $libraryEditMode)
-            .fileImporter(
-                isPresented: $isImportingPresented,
-                allowedContentTypes: DocumentImportService.supportedTypes,
-                allowsMultipleSelection: true
-            ) { result in
-                if case .success(let urls) = result {
-                    viewModel.importFiles(from: urls)
-                } else if case .failure(let error) = result {
-                    viewModel.importError = error.localizedDescription
-                }
-            }
-            .alert("Import Error", isPresented: Binding(
-                get: { viewModel.importError != nil },
-                set: { if !$0 { viewModel.importError = nil } }
-            )) {
-                Button("OK", role: .cancel) {}
-            } message: {
-                Text(viewModel.importError ?? "Unknown error")
-            }
-            .overlay {
-                if viewModel.isImporting {
-                    ProgressView("Importing")
-                        .playerPanel()
-                }
-            }
-            .sheet(isPresented: $isSortPresented) {
-                NavigationStack {
-                    SortOptionsView(selectedSort: $viewModel.sort)
-                        .toolbar {
-                            ToolbarItem(placement: .navigationBarTrailing) {
-                                Button("Done") {
-                                    isSortPresented = false
-                                }
-                            }
-                        }
-                }
-                .presentationDetents([.medium])
             }
         }
     }
 
     private func moveTracks(from source: IndexSet, to destination: Int) {
         viewModel.moveTracks(from: source, to: destination, in: displayedTracks)
+    }
+
+    private func moveMarkedTracks(_ trackIDs: [AudioTrack.ID], to destination: Int) {
+        let movedIDs = Set(trackIDs)
+        let movedTracks = displayedTracks.filter { movedIDs.contains($0.id) }
+        guard !movedTracks.isEmpty else { return }
+
+        let remainingTracks = displayedTracks.filter { !movedIDs.contains($0.id) }
+        let movedBeforeDestination = displayedTracks
+            .prefix(min(max(destination, 0), displayedTracks.count))
+            .filter { movedIDs.contains($0.id) }
+            .count
+        let adjustedDestination = min(
+            max(destination - movedBeforeDestination, 0),
+            remainingTracks.count
+        )
+
+        var reorderedTracks = remainingTracks
+        reorderedTracks.insert(contentsOf: movedTracks, at: adjustedDestination)
+        viewModel.applyCustomOrder(reorderedTracks)
+    }
+
+    private func deleteTrack(_ track: AudioTrack) {
+        guard let index = displayedTracks.firstIndex(where: { $0.id == track.id }) else { return }
+        store.deleteTracks(at: IndexSet(integer: index), from: displayedTracks)
+        player.removeTracks(withIDs: [track.id])
+        markedTrackIDs.remove(track.id)
+    }
+
+    private func toggleMarkedTrack(_ track: AudioTrack) {
+        if markedTrackIDs.contains(track.id) {
+            markedTrackIDs.remove(track.id)
+        } else {
+            markedTrackIDs.insert(track.id)
+        }
     }
 
     private func rowBackground(for track: AudioTrack) -> Color {

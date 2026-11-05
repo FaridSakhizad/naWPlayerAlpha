@@ -1,12 +1,26 @@
 import Foundation
 
+enum TrackStorageLocation: Codable, Equatable, Hashable {
+    case sandbox(fileName: String)
+    case externalBookmark(bookmarkData: Data, displayName: String)
+
+    var displayName: String {
+        switch self {
+        case .sandbox(let fileName):
+            fileName
+        case .externalBookmark(_, let displayName):
+            displayName
+        }
+    }
+}
+
 struct AudioTrack: Identifiable, Codable, Equatable, Hashable {
     var id: UUID
     var title: String
     var artist: String
     var album: String
     var duration: TimeInterval
-    var fileName: String
+    var storageLocation: TrackStorageLocation
     var artworkFileName: String?
     var dateAdded: Date
 
@@ -16,7 +30,7 @@ struct AudioTrack: Identifiable, Codable, Equatable, Hashable {
         artist: String = "Unknown Artist",
         album: String = "Unknown Album",
         duration: TimeInterval = 0,
-        fileName: String,
+        storageLocation: TrackStorageLocation,
         artworkFileName: String? = nil,
         dateAdded: Date = .now
     ) {
@@ -25,7 +39,7 @@ struct AudioTrack: Identifiable, Codable, Equatable, Hashable {
         self.artist = artist.isEmpty ? "Unknown Artist" : artist
         self.album = album.isEmpty ? "Unknown Album" : album
         self.duration = duration
-        self.fileName = fileName
+        self.storageLocation = storageLocation
         self.artworkFileName = artworkFileName
         self.dateAdded = dateAdded
     }

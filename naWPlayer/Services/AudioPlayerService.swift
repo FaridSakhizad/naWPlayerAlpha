@@ -121,6 +121,7 @@ final class AudioPlayerService: ObservableObject {
     func stop() {
         playbackToken = UUID()
         audioEngineService.stop()
+        trackPlaybackScheduler.stopAccessingCurrentFile()
         elapsed = 0
         progressTracker.stop()
         transitionToStopped()
@@ -248,9 +249,32 @@ final class AudioPlayerService: ObservableObject {
             playbackToken = UUID()
             isPlaying = false
             progressTracker.pause(at: elapsed)
+            if PlaybackFailureMapper.shouldSilentlySkip(error) {
+                skipUnavailableCurrentTrack()
+                return
+            }
             setPlaybackFailure(PlaybackFailureMapper.reason(for: error))
             updateNowPlaying()
         }
+    }
+
+    private func skipUnavailableCurrentTrack() {
+        if let currentIndex = playbackQueue.currentIndex {
+            _ = playbackQueue.removeItems(at: IndexSet(integer: currentIndex))
+            syncPublishedQueueState()
+        }
+
+        clearPlaybackFailure()
+        guard !playbackQueue.isEmpty else {
+            currentTrack = nil
+            elapsed = 0
+            progressTracker.reset()
+            playbackState = .idle
+            updateNowPlaying()
+            return
+        }
+
+        startCurrentTrack()
     }
 
     private func trackDidFinish(token: UUID) {
